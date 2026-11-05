@@ -2,7 +2,7 @@ import { Code2, Database, BrainCircuit, Terminal } from 'lucide-react'
 import FadeIn from './FadeIn'
 import AnimatedText from './AnimatedText'
 import ContactButton from './ContactButton'
-import { aboutText } from '../data/content'
+import { aboutText, aboutDecorations } from '../data/content'
 
 function DecoIcon({
   Icon,
@@ -36,22 +36,22 @@ export default function AboutSection() {
       className="relative min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20"
     >
       <FadeIn delay={0.1} x={-80} y={0} duration={0.9}>
-        <DecoIcon Icon={Code2} label="Java · OOP" className="top-[4%] left-[1%] sm:left-[2%] md:left-[4%]" />
+        <DecoIcon Icon={Code2} label={aboutDecorations[0]?.label || 'Python · Django · Java'} className="top-[4%] left-[1%] sm:left-[2%] md:left-[4%]" />
       </FadeIn>
       <FadeIn delay={0.25} x={-80} y={0} duration={0.9}>
         <DecoIcon
           Icon={Database}
-          label="MySQL · SQL"
+          label={aboutDecorations[1]?.label || 'MySQL · SQL'}
           className="bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%]"
         />
       </FadeIn>
       <FadeIn delay={0.15} x={80} y={0} duration={0.9}>
-        <DecoIcon Icon={BrainCircuit} label="AI / ML" className="top-[4%] right-[1%] sm:right-[2%] md:right-[4%]" />
+        <DecoIcon Icon={BrainCircuit} label={aboutDecorations[2]?.label || 'AI · OpenAI · Vision'} className="top-[4%] right-[1%] sm:right-[2%] md:right-[4%]" />
       </FadeIn>
       <FadeIn delay={0.3} x={80} y={0} duration={0.9}>
         <DecoIcon
           Icon={Terminal}
-          label="REST APIs"
+          label={aboutDecorations[3]?.label || 'REST APIs · Docker'}
           className="bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%]"
         />
       </FadeIn>

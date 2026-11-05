@@ -1,9 +1,9 @@
 export const profile = {
   name: 'Harsh Nagar',
-  role: 'Software Engineer · Java Developer · Backend Developer',
+  role: 'Backend & Full-Stack Developer · Python & Java · AI Systems',
   email: 'harshn845@gmail.com',
-  phone: '+91 7819981941',
-  location: 'Haridwar, UK, India',
+  phone: '+91-7819981941',
+  location: 'Haridwar, Uttarakhand, India',
   github: 'https://github.com/harshn845',
   linkedin: 'https://www.linkedin.com/in/harsh-nagar-012bb3307/',
   leetcode: 'https://leetcode.com/u/Harsh_Nagar25/',
@@ -11,76 +11,77 @@ export const profile = {
 }
 
 export const heroDescription =
-  'A software engineer passionate about building scalable backend systems, AI-powered applications, and impactful digital experiences.'
+  'Backend and full-stack developer passionate about building scalable web platforms, robust REST APIs, and AI-powered intelligent systems.'
 
 export const aboutText =
-  "I'm a Computer Science student graduating in 2026 with a CGPA of 8.02, specializing in Java, Spring Boot, REST APIs, and backend development. My internships at BHEL and Edunet Foundation gave me hands-on experience shipping enterprise payroll systems and AI-powered conversational tools. I care about clean data structures, thoughtful problem solving, and building real-world software that holds up under real use. Let's build something incredible together!"
+  "I'm a Computer Science student at CGC University, Mohali graduating in July 2026 with a CGPA of 8.02. With strong hands-on experience in Python, Django, Java, and Spring Boot, I build high-performance backend systems, REST APIs, and AI-powered applications. As a Backend Developer Contributor at Zynclave Tech (Vync), I contributed to core social media services using Django and Go. I care about clean architecture, scalable databases, and solving real-world engineering challenges."
 
 // Two marquee rows of technologies — mirrors the original 21-tile, two-row scroll
 export const techRow1 = [
+  'Python',
+  'Django',
+  'FastAPI',
   'Java',
   'Spring Boot',
+  'Go',
   'REST APIs',
   'MySQL',
   'SQL',
-  'Git',
-  'GitHub',
+  'Docker',
   'Postman',
-  'Data Structures',
-  'OOP',
-  'Multithreading',
 ]
 
 export const techRow2 = [
-  'Python',
+  'OpenAI SDK',
+  'Gemini API',
   'OpenCV',
   'FaceNet',
-  'Gemini API',
-  'JavaScript',
-  'HTML/CSS',
-  'Design Patterns',
-  'TDD',
+  'C++',
+  'Git',
+  'GitHub',
+  'Linux',
+  'HTML5/CSS3',
+  'Bootstrap',
   'VS Code',
-  'PyCharm',
 ]
 
 export const aboutDecorations = [
-  { key: 'code', label: 'Java · OOP' },
+  { key: 'code', label: 'Python · Django · Java' },
   { key: 'database', label: 'MySQL · SQL' },
-  { key: 'brain', label: 'AI / ML' },
-  { key: 'terminal', label: 'REST APIs' },
+  { key: 'brain', label: 'AI · OpenAI · Vision' },
+  { key: 'terminal', label: 'REST APIs · Docker' },
 ]
 
 export const services = [
   {
     number: '01',
-    name: 'Java Development',
+    name: 'Backend Architecture & REST APIs',
     description:
-      'Building robust, well-structured applications in Java, applying OOP principles, design patterns, and multithreading for reliable, maintainable code.',
+      'Designing and developing scalable backend systems using Django, Spring Boot, FastAPI, and Go. Implementing robust RESTful endpoints with clean HTTP semantics and reliable database integration.',
   },
   {
     number: '02',
-    name: 'Backend Development',
+    name: 'AI & Computer Vision Engineering',
     description:
-      'Designing and implementing backend systems with Spring Boot, handling business logic, data flow, and integrations that scale with real usage.',
+      'Building intelligent systems integrating LLMs via OpenAI SDK and Gemini API, along with computer vision pipelines using FaceNet embeddings and OpenCV for real-time facial recognition.',
   },
   {
     number: '03',
-    name: 'AI & Machine Learning',
+    name: 'Full-Stack & Web Development',
     description:
-      'Applying deep learning and computer vision techniques, from CNN-based face recognition to LLM-powered content generation, to solve practical problems.',
+      'Engineering performant, responsive web applications leveraging Python, Java, MySQL, HTML5, CSS3, and Bootstrap for seamless end-to-end functionality from database queries to front-facing interfaces.',
   },
   {
     number: '04',
-    name: 'API Development',
+    name: 'DevOps & Modern Tooling',
     description:
-      'Architecting RESTful APIs with clear contracts and proper HTTP semantics, integrating external services like Gemini API for AI-powered features.',
+      'Containerizing backend services with Docker, managing version control via Git & GitHub, conducting thorough API testing using Postman, and working proficiently across Linux and Windows.',
   },
   {
     number: '05',
-    name: 'Problem Solving',
+    name: 'Data Structures & Algorithms',
     description:
-      'Approaching challenges with strong data structures and algorithms fundamentals — 5-star rated on HackerRank, 90+ problems solved on LeetCode.',
+      'Strong problem-solving foundation with 100+ Data Structures and Algorithms problems solved, solid understanding of OOP, DBMS, Operating Systems, and Computer Networks.',
   },
 ]
 
@@ -91,42 +92,123 @@ export interface ProjectData {
   description: string
   tags: string[]
   liveHref: string
-  icon: 'mail' | 'scan-face' | 'gamepad'
+  icon: 'bot' | 'scan-face' | 'mail'
   accent: string
 }
 
 export const projects: ProjectData[] = [
   {
     number: '01',
-    category: 'Backend · AI',
-    name: 'Smart Email Assistant',
+    category: 'AI & Automation · Python',
+    name: 'HX Agent',
     description:
-      'An AI-powered email generator built with Spring Boot and the Gemini API. Optimized API call performance and designed RESTful endpoints across GET, POST, PUT and DELETE.',
-    tags: ['Java', 'Spring Boot', 'Gemini API', 'REST APIs', 'Postman'],
+      'Developed an AI-powered assistant using Python, FastAPI, and the OpenAI SDK. Implemented conversational workflows and task automation capabilities, designed with a modular architecture to support future tool integrations.',
+    tags: ['Python', 'FastAPI', 'OpenAI SDK', 'AI Agent', 'Task Automation'],
     liveHref: 'https://github.com/harshn845',
-    icon: 'mail',
+    icon: 'bot',
     accent: '#7621B0',
   },
   {
     number: '02',
-    category: 'AI / Computer Vision',
-    name: 'AI Campus Security Face Recognition',
+    category: 'Computer Vision · Deep Learning',
+    name: 'Face Recognition System',
     description:
-      'A CNN-based deep learning face recognition system using FaceNet and OpenCV, boosting campus security through feature extraction and classification.',
-    tags: ['Python', 'OpenCV', 'FaceNet', 'Deep Learning'],
+      'Developed a face recognition system using FaceNet embeddings and OpenCV. Implemented face detection, recognition, and identity matching workflows, with integrated database storage and retrieval for real-time recognition.',
+    tags: ['Python', 'OpenCV', 'FaceNet', 'Computer Vision', 'MySQL'],
     liveHref: 'https://github.com/harshn845',
     icon: 'scan-face',
     accent: '#B600A8',
   },
   {
     number: '03',
-    category: 'Java · OOP',
-    name: 'PacMan Game',
+    category: 'Backend · Generative AI',
+    name: 'Smart Email Assistant',
     description:
-      'A classic PacMan game built in Java Swing with full player movement, collision handling, and ghost AI using pathfinding algorithms across multiple difficulty levels.',
-    tags: ['Java', 'Java Swing', 'OOP', 'Game Loops'],
+      'Built an AI-powered email generator by integrating the Gemini API into a Spring Boot backend. Designed and implemented RESTful APIs (GET, POST, PUT, DELETE) tested via Postman, and optimized API performance for fast, reliable responses.',
+    tags: ['Java', 'Spring Boot', 'Gemini API', 'REST APIs', 'Postman'],
     liveHref: 'https://github.com/harshn845',
-    icon: 'gamepad',
+    icon: 'mail',
     accent: '#BE4C00',
   },
+]
+
+export interface ExperienceItem {
+  role: string
+  company: string
+  project?: string
+  description: string[]
+  technologies: string[]
+}
+
+export const experiences: ExperienceItem[] = [
+  {
+    role: 'Backend Developer Contributor',
+    company: 'Zynclave Tech Private Limited',
+    project: 'Vync (Social Media Platform)',
+    description: [
+      'Contributed to backend development of a social media platform alongside the core development team.',
+      'Worked with Django, Go, REST APIs, and database integration.',
+      'Assisted in API design, feature development, debugging, and deployment-related tasks.',
+    ],
+    technologies: ['Django', 'Go', 'REST APIs', 'MySQL', 'Python', 'Docker'],
+  },
+]
+
+export interface EducationData {
+  institution: string
+  location: string
+  degree: string
+  graduation: string
+  cgpa: string
+  coursework: string[]
+}
+
+export const educationData: EducationData = {
+  institution: 'CGC University',
+  location: 'Mohali, Punjab, India',
+  degree: 'Bachelor of Technology in Computer Science',
+  graduation: 'July 2026',
+  cgpa: '8.02 / 10.0',
+  coursework: [
+    'Data Structures & Algorithms',
+    'Object-Oriented Programming',
+    'Database Management Systems',
+    'Operating Systems',
+    'Computer Networks',
+  ],
+}
+
+export interface CertificationItem {
+  title: string
+  issuer: string
+  badge?: string
+}
+
+export const certifications: CertificationItem[] = [
+  {
+    title: 'Foundation Course on AI Readiness',
+    issuer: 'IICT & AI Skills House (in partnership with Google & YouTube)',
+    badge: 'AI & Machine Learning',
+  },
+  {
+    title: 'Young Turks (Certificate Of Merit)',
+    issuer: 'HCLTech & Naukri Campus',
+    badge: 'Excellence Merit',
+  },
+  {
+    title: 'Claude Code in Action',
+    issuer: 'Anthropic',
+    badge: 'AI Engineering',
+  },
+  {
+    title: 'MySQL',
+    issuer: 'Kaggle',
+    badge: 'Database & SQL',
+  },
+]
+
+export const achievements: string[] = [
+  'Solved 100+ Data Structures and Algorithms problems across competitive programming platforms.',
+  'Participated in college hackathons and collaborative software development events.',
+  'Developed multiple AI, backend, and full-stack projects available open-source on GitHub.',
 ]

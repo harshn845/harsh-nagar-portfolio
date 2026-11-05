@@ -1,11 +1,11 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { Mail, ScanFace, Gamepad2 } from 'lucide-react'
+import { Mail, ScanFace, Bot } from 'lucide-react'
 import FadeIn from './FadeIn'
 import LiveProjectButton from './LiveProjectButton'
 import { projects, type ProjectData } from '../data/content'
 
-const icons = { mail: Mail, 'scan-face': ScanFace, gamepad: Gamepad2 }
+const icons = { mail: Mail, 'scan-face': ScanFace, bot: Bot }
 
 function VisualTile({
   project,
@@ -118,7 +118,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="relative -mt-10 sm:-mt-12 md:-mt-14 z-10 rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 pt-20 sm:pt-24 md:pt-28 pb-10"
+      className="relative z-10 px-5 sm:px-8 md:px-10 pt-16 sm:pt-20 md:pt-24 pb-10"
       style={{ background: '#0C0C0C' }}
     >
       <FadeIn>

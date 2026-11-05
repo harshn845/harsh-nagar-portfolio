@@ -7,11 +7,12 @@ adapted from a 3D-creator template into a software engineer portfolio for Harsh 
 ## What's inside
 
 - **Hero** — animated gradient headline, availability badge, magnetic "code mark" portrait
-- **Marquee** — two scroll-driven rows of his tech stack (Java, Spring Boot, Python, OpenCV, etc.)
+- **Marquee** — two scroll-driven rows of tech stack (Python, Django, FastAPI, Java, Spring Boot, Go, Docker, etc.)
 - **About** — scroll-revealed bio with four floating skill-category icons
-- **Skills** — 5 numbered service-style skill blocks (Java Dev, Backend, AI/ML, API Dev, Problem Solving)
-- **Projects** — 3 sticky, stacking project cards (Smart Email Assistant, Face Recognition System, PacMan)
-- **Contact** — GitHub / LinkedIn / LeetCode / email links + resume download
+- **Skills** — 5 numbered skill blocks (Backend & APIs, AI & Vision, Full-Stack, DevOps & Tooling, DSA)
+- **Experience** — work experience (Zynclave Tech - Vync), education (CGC University), certifications (Google/YouTube, HCLTech, Anthropic, Kaggle), and achievements
+- **Projects** — 3 sticky, stacking project cards (HX Agent, Face Recognition System, Smart Email Assistant)
+- **Contact** — GitHub / LinkedIn / LeetCode / email / phone links + resume download
 
 All the original animation systems (FadeIn, Magnet, AnimatedText, scroll-linked marquee,
 sticky-scaling project cards) are preserved exactly as specified.

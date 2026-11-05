@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code2, Mail, FileDown } from 'lucide-react'
+import { Github, Linkedin, Code2, Mail, Phone, FileDown } from 'lucide-react'
 import FadeIn from './FadeIn'
 import ContactButton from './ContactButton'
 import { profile } from '../data/content'
@@ -8,6 +8,7 @@ const links = [
   { label: 'LinkedIn', href: profile.linkedin, Icon: Linkedin },
   { label: 'LeetCode', href: profile.leetcode, Icon: Code2 },
   { label: 'Email', href: `mailto:${profile.email}`, Icon: Mail },
+  { label: profile.phone, href: `tel:${profile.phone}`, Icon: Phone },
 ]
 
 export default function ContactSection() {
