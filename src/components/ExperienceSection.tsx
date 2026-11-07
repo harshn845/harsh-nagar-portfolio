@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Award, Trophy, CheckCircle2 } from 'lucide-react'
+import { Briefcase, GraduationCap, Award, Trophy, CheckCircle2, ChevronRight } from 'lucide-react'
 import FadeIn from './FadeIn'
 import {
   experiences,
